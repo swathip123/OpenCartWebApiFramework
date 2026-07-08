@@ -11,3 +11,4 @@ allure-results/
 
 # Environment files
 config/.env.*
+!config/.env.example
