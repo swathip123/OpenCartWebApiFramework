@@ -10,7 +10,7 @@ export class CartPage extends BasePage {
   readonly productUnitPrice:Locator;
   readonly productTotal:Locator;
   readonly checkoutButton:Locator;
-
+readonly checkoutButtonNext :Locator
   constructor(page: Page) {
     super(page);
     this.header = page.getByRole("heading", { level: 1 });
@@ -21,6 +21,8 @@ export class CartPage extends BasePage {
     this.productUnitPrice=page.locator('div#content td:nth-of-type(4)');
     this.productTotal=page.locator('div#content td:nth-of-type(5)');
     this.checkoutButton=page.getByRole('link',{name:'Checkout'});
+    this.checkoutButtonNext=page.getByRole('link',{name:'Checkout'});
+
   }
 
   async getCartPageHeader(): Promise<string> {
