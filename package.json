@@ -1,0 +1,28 @@
+{
+  "name": "opencart_webframework_naveenautomationlabs",
+  "version": "1.0.0",
+  "description": "This is the framework to practice paywright",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:qa": "set ENV=qa&& playwright test",
+    "test:dev": "set ENV=dev&& playwright test",
+    "test:qa:login": "set ENV=qa&& playwright test tests/loginpgaefix.spec.ts",
+    "test:dev:login": "set ENV=dev&& playwright test tests/loginpgaefix.spec.ts"
+  },
+  "keywords": [],
+  "author": "Swathi ",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.0.1",
+    "allure-commandline": "^2.43.0",
+    "allure-playwright": "^3.10.2"
+  },
+  "dependencies": {
+    "csv-parse": "^7.0.1",
+    "dotenv": "^17.4.2",
+    "xlsx": "^0.18.5"
+  }
+}
