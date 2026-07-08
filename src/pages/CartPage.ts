@@ -21,7 +21,7 @@ readonly checkoutButtonNext :Locator
     this.productUnitPrice=page.locator('div#content td:nth-of-type(4)');
     this.productTotal=page.locator('div#content td:nth-of-type(5)');
     this.checkoutButton=page.getByRole('link',{name:'Checkout'});
-    this.checkoutButtonNext=page.getByRole('link',{name:'Checkout'});
+    this.checkoutButtonNext=page.getByRole('link',{name:'Checko123ut'});
 
   }
 
